@@ -20,6 +20,21 @@ module.exports = withMT({
       height: {
         main: 'calc(100vh - 100px)',
       },
+
+      keyframes: {
+        typing: {
+          '0%': { width: 0 },
+          '100%': { width: '100%' },
+        },
+      },
+
+      animation: {
+        curve: 'curve 3.5s ease-in-out',
+        appear: 'appear 2s',
+
+        blink: 'blink .5s step-end infinite alternate',
+        typing: 'typing 4s steps(27)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

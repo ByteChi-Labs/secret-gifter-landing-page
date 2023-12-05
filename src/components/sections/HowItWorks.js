@@ -6,14 +6,16 @@ const HowItWorks = () => {
   const [tab, setTab] = useState('organisers');
 
   return (
-    <section className="my-20 ">
+    <section className="my-20 py-16">
       <div className="text-center">
-        <h2 className="font-semibold text-xl lg:text-4xl">
-          How Secret Gifter Works
-        </h2>
+        <div className="w-fit mx-auto">
+          <h2 className=" w-fit animate-typing relative after:content-[''] after:block after:h-[10px] after:w-1.5 after:absolute after:-right-1 after:top-1/4 after:bg-white whitespace-nowrap overflow-hidden font-semibold text-xl lg:text-4xl">
+            How Secret Gifter Works.
+          </h2>
+        </div>
 
         <p className="mt-2 text-sm md:text-base">
-          Begin using secret gifter in three easy steps
+          Get started with secret gifter in three easy steps
         </p>
       </div>
 
