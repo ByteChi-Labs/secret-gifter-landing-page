@@ -6,72 +6,38 @@ import { heroImage, greenRibbon } from '../../../public/assets/images';
 
 const Hero = () => {
   return (
-    <>
-      {/* <div className="relative px-4 lg:px-12  xl:w-5/6 mx-auto py-20 lg:py-36 grid grid-cols-1 lg:grid-cols-8 mt-6 bg-white lg:shadow-md text-black rounded-xl  ">
-        <Image
-          className="w-40 md:w-56 absolute -left-4 md:-right-8 lg:-left-8 -top-16 "
-          src={greenRibbon}
-          alt="green knotted ribbon"
-        />
+    <div className="relative px-4 lg:pl-12 pt-20  xl:w-5/6 mx-auto grid grid-cols-1 lg:grid-cols-8 gap-8 mt-6 bg-white lg:shadow-sm text-black rounded-xl  ">
+      <Image
+        className="w-40 h-30 md:h-auto md:w-56 absolute -left-4 md:-right-8 lg:-left-8 -top-16 "
+        src={greenRibbon}
+        alt="green knotted ribbon"
+      />
 
-        <div className="lg:col-span-5  self-center ">
-          <h1 className="font-bold text-3xl">
-            This is the main header for this page
-          </h1>
+      <div className="lg:col-span-4 self-center ">
+        <h1 className="font-bold text-3xl">
+          This is the main header for this page
+        </h1>
 
-          <p className="my-4 lg:w-2/3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
-          </p>
+        <p className="my-4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
+        </p>
 
-          <Button className="mt-4 bg-[#007E29] capitalize px-12 text-base rounded-lg">
-            get started
-          </Button>
-        </div>
-
-        <div className="mt-10 lg:absolute -right-16 bottom-0">
-          <Image src={heroImage} alt="several gifts piled ontop each other" />
-        </div>
-      </div> */}
-      <div className="relative px-4 lg:pl-12 pt-20  xl:w-5/6 mx-auto grid grid-cols-1 lg:grid-cols-8 gap-8 mt-6 bg-white lg:shadow-sm text-black rounded-xl  ">
-        <Image
-          className="w-40 md:w-56 absolute -left-4 md:-right-8 lg:-left-8 -top-16 "
-          src={greenRibbon}
-          alt="green knotted ribbon"
-        />
-
-        <div className="lg:col-span-4 self-center ">
-          <h1 className="font-bold text-3xl">
-            This is the main header for this page
-          </h1>
-
-          <p className="my-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
-          </p>
-
-          <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
-            get started
-          </Button>
-        </div>
-
-        <div className="lg:col-span-4 ">
-          <Image
-            className=""
-            src={heroImage}
-            alt="several gifts piled ontop each other"
-          />
-        </div>
-
-        {/* <div className="mt-10 lg:absolute -right-16 bottom-0">
-          <Image src={heroImage} alt="several gifts piled ontop each other" />
-        </div> */}
+        <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
+          get started
+        </Button>
       </div>
-    </>
+
+      <div className="lg:col-span-4 ">
+        <Image
+          className=""
+          src={heroImage}
+          alt="several gifts piled ontop each other"
+        />
+      </div>
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ import { newsletterAlert } from '../../../public/assets/images';
 const Newsletter = () => {
   return (
     <section className="px-4 lg:px-8 xl:px-0 py-10 lg:py-0 relative bg-forest-green h-fit lg:h-[60vh] lg:flex items-center justify-center">
-      <div className="hidden lg:block absolute -top-12 left-36 ">
+      <div className="hidden lg:block absolute -top-12 left-48 ">
         <Image src={newsletterAlert} alt="holiday bells" />
       </div>
 
@@ -19,7 +19,7 @@ const Newsletter = () => {
       </div>
 
       <div className="mt-8 lg:mt-0 lg:w-1/2 ml-auto ">
-        <h3 className="font-semibold text-2xl lg:text-3xl text-white">
+        <h3 className="font-semibold text-2xl lg:text-5xl text-white">
           Get early updates from us
         </h3>
 
