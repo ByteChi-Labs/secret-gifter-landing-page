@@ -10,17 +10,17 @@ const Footer = () => {
     {
       id: 1,
       name: 'How it works',
-      link: '/features',
+      link: '/',
     },
     {
       id: 2,
       name: 'Contact us',
-      link: '/contact-us',
+      link: '/',
     },
     {
       id: 3,
       name: 'About us',
-      link: '/about-us',
+      link: '/',
     },
   ];
 
