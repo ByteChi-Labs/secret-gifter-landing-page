@@ -14,15 +14,14 @@ const Hero = () => {
       />
 
       <div className="lg:col-span-4 self-center ">
-        <h1 className="font-bold text-3xl">
-          This is the main header for this page
+        <h1 className="font-bold text-3xl lg:text-[36px] leading-10">
+          Connecting Hearts Through Thoughtful Gifts.
         </h1>
 
-        <p className="my-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book.
+        <p className="my-4 lg:w-5/6">
+          Secret Gifter automates the process, ensuring smooth coordination,
+          timely communication, and a perfect sprinkle of surprise. We are
+          making gift exchanges effortless!
         </p>
 
         <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
