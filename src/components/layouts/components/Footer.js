@@ -1,5 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import { secretGifterLogo } from '../../../../public/assets/images';
+import { logo } from '../../../../public/assets/icons';
 
 const Footer = () => {
   const navItems = [
@@ -41,7 +45,9 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       <div className="py-4 px-4 lg:px-8 xl:px-0 xl:w-5/6 mx-auto flex flex-wrap gap-y-4 justify-between items-center">
-        <div className="font-bold">SecretGifter</div>
+        <div>
+          <Image src={logo} alt="secret gifter logo" />
+        </div>
 
         <ul
           aria-label="footer-links"
@@ -74,7 +80,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="border-t border-gray-500 py-4 text-center">
+      <div className=" border-t border-gray-500 py-4 text-center">
         © 2023 ByteChi Labs. All rights reserved.
       </div>
     </footer>
