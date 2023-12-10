@@ -14,7 +14,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
   const navItems = [
     {
       id: 1,
-      name: 'Features',
+      name: 'How it works',
       link: '/features',
     },
     {
@@ -42,6 +42,11 @@ const Sidebar = ({ sidebar, setSidebar }) => {
               {item.name}
             </Link>
           ))}
+
+          <Button className="bg-forest-green capitalize">
+            {' '}
+            create account
+          </Button>
         </ul>
       </div>
       {/* overlay */}
