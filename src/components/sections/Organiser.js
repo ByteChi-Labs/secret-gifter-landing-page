@@ -34,7 +34,7 @@ const Organiser = ({ tab }) => {
             </div>
           </div>
 
-          <div className="flex items-center lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
+          <div className="flex flex-col lg:flex-row items-center lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
             <div className="">
               <Image src={account1} alt="create account" />
             </div>
@@ -42,15 +42,6 @@ const Organiser = ({ tab }) => {
               <Image src={account2} alt="create account" />
             </div>
           </div>
-
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-2/3 ml-auto mt-4">
-            <div className="self-end">
-              <Image src={account1} alt="create account" />
-            </div>
-            <div>
-              <Image src={account2} alt="create account" />
-            </div>
-          </div> */}
         </article>
       </div>
 
@@ -74,7 +65,7 @@ const Organiser = ({ tab }) => {
             </div>
           </div>
 
-          <div className="flex items-end lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
+          <div className="flex flex-col lg:flex-row items-center  lg:items-end lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
             <div className="">
               <Image src={event1} alt="create event mobile" />
             </div>
@@ -82,15 +73,6 @@ const Organiser = ({ tab }) => {
               <Image src={event2} alt="create event desktop" />
             </div>
           </div>
-
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-2/3 ml-auto mt-8">
-            <div className="self-end">
-              <Image src={event1} alt="create event mobile" />
-            </div>
-            <div className>
-              <Image src={event2} alt="create event desktop" />
-            </div>
-          </div> */}
         </article>
       </div>
 
@@ -114,7 +96,7 @@ const Organiser = ({ tab }) => {
             </div>
           </div>
 
-          <div className="flex items-end lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
+          <div className="flex flex-col lg:flex-row  items-center lg:items-end lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
             <div className="">
               <Image src={invite1} alt="invite" />
             </div>
