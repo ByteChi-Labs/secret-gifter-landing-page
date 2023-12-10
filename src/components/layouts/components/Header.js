@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import { Button } from '@material-tailwind/react';
 import Sidebar from './Sidebar';
+
+import { logo } from '../../../../public/assets/icons';
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -11,7 +14,7 @@ const Header = () => {
   const navItems = [
     {
       id: 1,
-      name: 'Features',
+      name: 'How it works',
       link: '/features',
     },
     {
@@ -29,7 +32,9 @@ const Header = () => {
   return (
     <header className="bg-off-white fixed top-0 left-0 w-full z-30 px-4 lg:px-12 xl:px-0 py-4">
       <nav className=" xl:w-5/6 mx-auto flex items-center justify-between">
-        <div className="font-bold">SecretGifter</div>
+        <div>
+          <Image src={logo} alt="secret gifter logo" />
+        </div>
 
         <ul className="hidden lg:flex items-center gap-x-8">
           {navItems?.map((item) => (
@@ -45,7 +50,10 @@ const Header = () => {
           ))}
         </ul>
 
-        <Button className="bg-forest-green capitalize"> create account</Button>
+        <Button className="hidden lg:block bg-forest-green capitalize">
+          {' '}
+          create account
+        </Button>
 
         <button
           onClick={() => setSidebar(!sidebar)}

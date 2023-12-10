@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <div className="bg-off-white">
       <Header />
 
-      <div className="bg-off-white overflow-y-auto pt-[72px] snap-y	snap-mandatory	">
+      <div className="bg-off-white overflow-y-auto pt-[120px] snap-y	snap-mandatory	">
         <main className="snap-start ">{children}</main>
 
         <div>
