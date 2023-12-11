@@ -6,7 +6,7 @@ import { heroImage, greenRibbon } from '../../../public/assets/images';
 
 const Hero = () => {
   return (
-    <div className="relative px-4 lg:pl-12 pt-20  xl:w-5/6 mx-auto grid grid-cols-1 lg:grid-cols-8 gap-8 mt-6 bg-white lg:shadow-sm text-black rounded-xl  ">
+    <section className="relative px-4 lg:pl-12 pt-20  xl:w-5/6 mx-auto grid grid-cols-1 lg:grid-cols-8 gap-8 mt-6 bg-white lg:shadow-sm text-black rounded-xl  ">
       <Image
         className="w-40 h-30 md:h-auto md:w-56 absolute -left-4 md:-right-8 lg:-left-8 -top-16 "
         src={greenRibbon}
@@ -36,7 +36,7 @@ const Hero = () => {
           alt="several gifts piled ontop each other"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

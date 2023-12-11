@@ -12,7 +12,7 @@ import {
 
 const Organiser = ({ tab }) => {
   return (
-    <div className={tab === 'organisers' ? 'block' : 'hidden'}>
+    <section className={tab === 'organisers' ? 'block' : 'hidden'}>
       <div>
         <article>
           <div className="flex items-baseline gap-x-2 lg:gap-x-4">
@@ -106,7 +106,7 @@ const Organiser = ({ tab }) => {
           </div>
         </article>
       </div>
-    </div>
+    </section>
   );
 };
 
