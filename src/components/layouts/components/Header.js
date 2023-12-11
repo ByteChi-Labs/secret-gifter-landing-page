@@ -22,11 +22,11 @@ const Header = () => {
       name: 'Contact us',
       link: '/contact-us',
     },
-    {
-      id: 3,
-      name: 'About us',
-      link: '/about-us',
-    },
+    // {
+    //   id: 3,
+    //   name: 'About us',
+    //   link: '/about-us',
+    // },
   ];
 
   return (
