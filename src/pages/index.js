@@ -16,13 +16,13 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="description" content="Secret Gifter" />
+        <meta name="description" content="My Secret Gifter" />
 
         <meta
           property="og:image"
           content="%PUBLIC_URL%/assets/icons/logo.svg"
         />
-        <meta property="og:title" content="Secret Gifter" />
+        <meta property="og:title" content=" My Secret Gifter" />
         <meta
           property="og:description"
           content="Add an element of surprise and joy to your social circle—because every occasion deserves a little Secret Gifter magic!"

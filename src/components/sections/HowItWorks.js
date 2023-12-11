@@ -41,10 +41,10 @@ const HowItWorks = () => {
         </li>
       </ul>
 
-      <div className="xl:w-5/6 mx-auto mt-8 px-4 lg:px-8 xl:px-0">
+      <article className="xl:w-5/6 mx-auto mt-8 px-4 lg:px-8 xl:px-0">
         <Organiser tab={tab} />
         <Participant tab={tab} />
-      </div>
+      </article>
     </section>
   );
 };
