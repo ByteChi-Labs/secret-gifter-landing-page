@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { secretGifterLogo } from '../../../../public/assets/images';
 import { logo } from '../../../../public/assets/icons';
 
 const Footer = () => {
@@ -15,13 +13,13 @@ const Footer = () => {
     {
       id: 2,
       name: 'Contact us',
-      link: '/',
+      link: '/contact-us',
     },
-    {
-      id: 3,
-      name: 'About us',
-      link: '/',
-    },
+    // {
+    //   id: 3,
+    //   name: 'About us',
+    //   link: '/',
+    // },
   ];
 
   const socials = [
@@ -45,9 +43,11 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       <div className="py-4 px-4 lg:px-8 xl:px-0 xl:w-5/6 mx-auto flex flex-wrap gap-y-4 justify-between items-center">
-        <div>
-          <Image src={logo} alt="secret gifter logo" />
-        </div>
+        <Link href="/">
+          <div>
+            <Image src={logo} alt="secret gifter logo" />
+          </div>
+        </Link>
 
         <ul
           aria-label="footer-links"
