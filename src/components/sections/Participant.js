@@ -64,7 +64,7 @@ const Participant = ({ tab }) => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center lg:w-2/3 ml-auto gap-x-20 gap-y-8 mt-8">
+          <div className="flex flex-col lg:flex-row items-center lg:w-2/3 ml-auto gap-x-10 gap-y-8 mt-8">
             <div className="">
               <Image src={wish2} alt="create event mobile" />
             </div>

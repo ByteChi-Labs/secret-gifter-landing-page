@@ -15,32 +15,34 @@ const Header = () => {
     {
       id: 1,
       name: 'How it works',
-      link: '/features',
+      link: '/',
     },
     {
       id: 2,
       name: 'Contact us',
       link: '/contact-us',
     },
-    {
-      id: 3,
-      name: 'About us',
-      link: '/about-us',
-    },
+    // {
+    //   id: 3,
+    //   name: 'About us',
+    //   link: '/about-us',
+    // },
   ];
 
   return (
     <header className="bg-off-white fixed top-0 left-0 w-full z-30 px-4 lg:px-12 xl:px-0 py-4">
       <nav className=" xl:w-5/6 mx-auto flex items-center justify-between">
-        <div>
-          <Image src={logo} alt="secret gifter logo" />
-        </div>
+        <Link href="/">
+          <div>
+            <Image src={logo} alt="secret gifter logo" />
+          </div>
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-x-8">
           {navItems?.map((item) => (
             <Link
               className={`text-base ${
-                route === item.link ? 'bg-black' : 'text-gray-600'
+                route === item.link ? 'text-black' : 'text-gray-600'
               } hover:text-black transition-all`}
               key={item.id}
               href={item.link}
@@ -50,10 +52,16 @@ const Header = () => {
           ))}
         </ul>
 
-        <Button className="hidden lg:block bg-forest-green capitalize">
-          {' '}
-          create account
-        </Button>
+        <a
+          href="https://organiser.mysecretgifter.com/sign-up"
+          target="_blank"
+          norefer
+        >
+          <Button className="hidden lg:block bg-forest-green capitalize">
+            {' '}
+            create account
+          </Button>
+        </a>
 
         <button
           onClick={() => setSidebar(!sidebar)}
