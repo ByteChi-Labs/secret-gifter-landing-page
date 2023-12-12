@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { logo } from '../../../../public/assets/icons';
+import { ExternalRoutes, WebsiteRoutes } from '@/websiteRoutes';
 
 const Footer = () => {
   const navItems = [
@@ -13,12 +14,12 @@ const Footer = () => {
     {
       id: 2,
       name: 'Contact us',
-      link: '/contact-us',
+      link: WebsiteRoutes.CONTACT_US,
     },
     {
       id: 3,
       name: 'About us',
-      link: '/about-us',
+      link: WebsiteRoutes.ABOUT_US,
     },
   ];
 
@@ -26,17 +27,17 @@ const Footer = () => {
     {
       id: 1,
       name: 'Instagram',
-      link: 'https://www.instagram.com/mysecretgifter',
+      link: ExternalRoutes.INSTAGRAM,
     },
     {
       id: 2,
       name: 'Twitter',
-      link: 'https://twitter.com/mysecretgifter',
+      link: ExternalRoutes.TWITTER,
     },
     {
       id: 3,
       name: 'LinkedIn',
-      link: '/',
+      link: ExternalRoutes.LINKEDIN,
     },
   ];
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 // import { closeBlack } from '../../../assets/svgs';
 
 import { Button } from '@material-tailwind/react';
+import { WebsiteRoutes } from '@/websiteRoutes';
 
 const Sidebar = ({ sidebar, setSidebar }) => {
   const closeSideBar = () => {
@@ -20,12 +21,12 @@ const Sidebar = ({ sidebar, setSidebar }) => {
     {
       id: 2,
       name: 'Contact us',
-      link: '/',
+      link: WebsiteRoutes.CONTACT_US,
     },
     {
       id: 3,
       name: 'About us',
-      link: '/',
+      link: WebsiteRoutes.ABOUT_US,
     },
   ];
 

@@ -7,6 +7,7 @@ import { Button } from '@material-tailwind/react';
 import Sidebar from './Sidebar';
 
 import { logo } from '../../../../public/assets/icons';
+import { WebsiteRoutes } from '@/websiteRoutes';
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
     {
       id: 2,
       name: 'Contact us',
-      link: '/contact-us',
+      link: WebsiteRoutes.CONTACT_US,
     },
     // {
     //   id: 3,
