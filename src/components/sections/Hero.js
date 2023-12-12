@@ -14,9 +14,10 @@ const Hero = () => {
       />
 
       <div className="lg:col-span-4 self-center ">
-        <h1 className="font-bold text-3xl lg:text-[36px] leading-10">
+        <h1 className="font-semibold text-lg">My Secret Gifter</h1>
+        <h2 className="font-bold text-3xl lg:text-[36px] leading-10">
           Connecting Hearts Through Thoughtful Gifts.
-        </h1>
+        </h2>
 
         <p className="my-4 lg:w-5/6">
           Secret Gifter automates the process, ensuring smooth coordination,
@@ -24,16 +25,21 @@ const Hero = () => {
           making gift exchanges effortless!
         </p>
 
-        <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
-          get started
-        </Button>
+        <a
+          href="https://organiser.mysecretgifter.com/login"
+          target="_blank"
+          norefer
+        >
+          <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
+            get started
+          </Button>
+        </a>
       </div>
 
       <div className="lg:col-span-4 ">
         <Image
-          className=""
           src={heroImage}
-          alt="several gifts piled ontop each other"
+          alt="secret gifter hero image - a girl standing behind a pile of colourful gifts"
         />
       </div>
     </section>

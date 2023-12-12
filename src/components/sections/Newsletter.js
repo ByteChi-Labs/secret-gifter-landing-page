@@ -45,8 +45,6 @@ const Newsletter = () => {
     try {
       const res = await api.post('/contacts', subscribeData);
 
-      console.log({ res });
-
       setSending(false);
 
       if (res?.status === 201) {
@@ -89,15 +87,15 @@ const Newsletter = () => {
 
   return (
     <section className="px-4 lg:px-8 xl:px-0 py-10 lg:py-20 xl:py-0 relative bg-forest-green h-fit xl:h-[60vh] lg:flex items-center justify-center">
-      <div className="hidden lg:block absolute lg:-top-20 xl:-top-12 lg:left-4 xl:left-48 ">
-        <Image src={newsletterAlert} alt="holiday bells" />
+      <div className="hidden lg:block absolute lg:-top-20 xl:-top-12 lg:left-4 xl:left-36 ">
+        <Image src={newsletterAlert} alt="secret gifteer holiday bells" />
       </div>
 
       <div className="lg:hidden">
         <Image
           className="w-48 mx-auto"
           src={newsletterAlert}
-          alt="holiday bells"
+          alt="secret gifter holiday bells"
         />
       </div>
 
