@@ -52,10 +52,16 @@ const Header = () => {
           ))}
         </ul>
 
-        <Button className="hidden lg:block bg-forest-green capitalize">
-          {' '}
-          create account
-        </Button>
+        <a
+          href="https://organiser.mysecretgifter.com/sign-up"
+          target="_blank"
+          norefer
+        >
+          <Button className="hidden lg:block bg-forest-green capitalize">
+            {' '}
+            create account
+          </Button>
+        </a>
 
         <button
           onClick={() => setSidebar(!sidebar)}
