@@ -26,12 +26,20 @@ module.exports = withMT({
           '0%': { width: 0 },
           '100%': { width: '100%' },
         },
+        shake: {
+          '0%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-5px)' },
+          '50%': { transform: 'translateX(5px)' },
+          '75%': { transform: 'translateX(-5px)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
 
       animation: {
         curve: 'curve 3.5s ease-in-out',
         appear: 'appear 2s',
-
+        shake: 'shake 0.5s ease-in-out',
+        shaking: 'shake 0.5s ease-in-out infinite alternate',
         blink: 'blink .5s step-end infinite alternate',
         typing: 'typing 4s steps(27)',
       },

@@ -58,8 +58,7 @@ const Header = () => {
           target="_blank"
           norefer
         >
-          <Button className="hidden lg:block bg-forest-green capitalize">
-            {' '}
+          <Button className="text-sm hidden lg:block bg-forest-green capitalize animate-shaking">
             create account
           </Button>
         </a>
@@ -69,24 +68,21 @@ const Header = () => {
           className="z-[60] flex lg:hidden flex-col justify-center items-center"
         >
           <span
-            className={`bg-black block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-                      sidebar ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
-                    }`}
+            className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+              sidebar ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+            }`}
           ></span>
 
           <span
-            className={`bg-black block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm my-0.5 ${
-                      sidebar ? 'opacity-0' : 'opacity-100'
-                    }`}
+            className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+              sidebar ? 'opacity-0' : 'opacity-100'
+            }`}
           ></span>
 
           <span
-            className={`bg-black block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-                      sidebar ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
-                    }`}
+            className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+              sidebar ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
+            }`}
           ></span>
         </button>
       </nav>

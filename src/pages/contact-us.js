@@ -13,6 +13,7 @@ import { Newsletter } from '@/components/sections';
 import { useForm } from 'react-hook-form';
 
 import { toast } from 'react-toastify';
+import { Animator } from '@/components/layouts/components';
 
 const ContactUs = () => {
   const [sending, setSending] = useState(false);
@@ -97,29 +98,39 @@ const ContactUs = () => {
 
         <title>Secret Gifter | Contact Us</title>
       </Head>
+
       <section className={`${dmSans.className} `}>
-        <h1 className="px-4 lg:px-6 xl:px-0 xl:w-5/6 mx-auto  font-bold text-2xl lg:text-[36px] leading-10">
-          Secret Gifter - Contact Us
-        </h1>
+        <Animator data_aos_delay="100">
+          <h1 className="px-4 lg:px-6 xl:px-0 xl:w-5/6 mx-auto  font-bold text-2xl lg:text-[36px] leading-10">
+            Secret Gifter - Contact Us
+          </h1>
+        </Animator>
 
         <div className="mb-20 py-16 px-4 lg:px-10 bg-white xl:w-5/6 mx-auto lg:shadow-sm rounded-xl   grid grid-cols-1 lg:grid-cols-8 gap-8 mt-6">
           <article className="lg:col-span-5 text-black  ">
-            <h2 className="text-2xl lg:text-3xl font-semibold lg:w-2/3">
-              Discover Seamless and Joyous Gift Exchanges
-            </h2>
-            <div className="lg:w-5/6">
-              <p className="my-4">
-                Experience the magic of Secret Gifter – where gift-giving
-                becomes effortless, and memories are crafted. Join us for
-                seamless and joyous exchanges that turn every gift into a
-                delightful memory.
-              </p>
+            <Animator data_aos_delay="250">
+              <h2 className="text-2xl lg:text-3xl font-semibold lg:w-2/3">
+                Discover Seamless and Joyous Gift Exchanges
+              </h2>
+            </Animator>
 
-              <p>
-                Whether you have questions, suggestions, or just want to share
-                the excitement, our contact portal is your gateway to the world
-                of effortless gifting. Connect with the magic today!
-              </p>
+            <div className="lg:w-5/6">
+              <Animator data_aos_delay="400">
+                <p className="my-4">
+                  Experience the magic of Secret Gifter – where gift-giving
+                  becomes effortless, and memories are crafted. Join us for
+                  seamless and joyous exchanges that turn every gift into a
+                  delightful memory.
+                </p>
+              </Animator>
+
+              <Animator data_aos_delay="450">
+                <p>
+                  Whether you have questions, suggestions, or just want to share
+                  the excitement, our contact portal is your gateway to the
+                  world of effortless gifting. Connect with the magic today!
+                </p>
+              </Animator>
             </div>
           </article>
 
