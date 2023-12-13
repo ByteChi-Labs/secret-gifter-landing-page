@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '@material-tailwind/react';
 
 import { heroImage, greenRibbon } from '../../../public/assets/images';
+import { Animator } from '../layouts/components';
 
 const Hero = () => {
   return (
@@ -14,26 +15,35 @@ const Hero = () => {
       />
 
       <div className="lg:col-span-4 self-center ">
-        <h1 className="font-semibold text-lg">My Secret Gifter</h1>
-        <h2 className="font-bold text-3xl lg:text-[36px] leading-10">
-          Connecting Hearts Through Thoughtful Gifts.
-        </h2>
+        <Animator data_aos_delay="100">
+          <h1 className="font-semibold text-lg">My Secret Gifter</h1>
+        </Animator>
 
-        <p className="my-4 lg:w-5/6">
-          Secret Gifter automates the process, ensuring smooth coordination,
-          timely communication, and a perfect sprinkle of surprise. We are
-          making gift exchanges effortless!
-        </p>
+        <Animator data_aos_delay="250">
+          <h2 className="font-bold text-3xl lg:text-[36px] leading-10">
+            Connecting Hearts Through Thoughtful Gifts.
+          </h2>
+        </Animator>
 
-        <a
-          href="https://organiser.mysecretgifter.com/login"
-          target="_blank"
-          norefer
-        >
-          <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
-            get started
-          </Button>
-        </a>
+        <Animator data_aos_delay="400">
+          <p className="my-4 lg:w-5/6">
+            Secret Gifter automates the process, ensuring smooth coordination,
+            timely communication, and a perfect sprinkle of surprise. We are
+            making gift exchanges effortless!
+          </p>
+        </Animator>
+
+        <Animator data_aos_delay="550">
+          <a
+            href="https://organiser.mysecretgifter.com/login"
+            target="_blank"
+            norefer
+          >
+            <Button className="mt-4 bg-forest-green capitalize px-12 text-base rounded-lg">
+              get started
+            </Button>
+          </a>
+        </Animator>
       </div>
 
       <div className="lg:col-span-4 ">
