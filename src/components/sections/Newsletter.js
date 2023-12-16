@@ -134,7 +134,7 @@ const Newsletter = () => {
 
             <Button
               onClick={submitForm}
-              className="bg-white text-black capitalize text-sm px-6 rounded animate-shaking"
+              className="bg-white text-black capitalize text-sm px-6 rounded"
             >
               {sending ? 'Subscribing..' : 'Subcribe'}
             </Button>

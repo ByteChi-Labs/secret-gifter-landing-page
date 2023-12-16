@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -10,6 +10,22 @@ import { logo } from '../../../../public/assets/icons';
 import { WebsiteRoutes } from '@/websiteRoutes';
 
 const Header = () => {
+  const [shaking, setShaking] = useState(false);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setShaking(true);
+
+      // Set a timeout to stop the shaking after 0.5 seconds
+      setTimeout(() => {
+        setShaking(false);
+      }, 500);
+    }, 10000);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
+
   const [sidebar, setSidebar] = useState(false);
   const { route } = useRouter();
   const navItems = [
@@ -58,7 +74,11 @@ const Header = () => {
           target="_blank"
           norefer
         >
-          <Button className="text-sm hidden lg:block bg-forest-green capitalize animate-shaking">
+          <Button
+            className={`text-sm hidden lg:block bg-forest-green capitalize ${
+              shaking ? 'animate-shaking' : ''
+            }`}
+          >
             create account
           </Button>
         </a>
