@@ -44,10 +44,16 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             </Link>
           ))}
 
-          <Button className="bg-forest-green capitalize">
-            {' '}
-            create account
-          </Button>
+          <a
+            onClick={closeSideBar}
+            href="https://organiser.mysecretgifter.com/sign-up"
+            target="_blank"
+          >
+            <Button className="bg-forest-green capitalize">
+              {' '}
+              create account
+            </Button>
+          </a>
         </ul>
       </div>
       {/* overlay */}

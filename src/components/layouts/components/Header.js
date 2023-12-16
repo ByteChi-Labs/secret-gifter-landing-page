@@ -69,11 +69,7 @@ const Header = () => {
           ))}
         </ul>
 
-        <a
-          href="https://organiser.mysecretgifter.com/sign-up"
-          target="_blank"
-          norefer
-        >
+        <a href="https://organiser.mysecretgifter.com/sign-up" target="_blank">
           <Button
             className={`text-sm hidden lg:block bg-forest-green capitalize ${
               shaking ? 'animate-shaking' : ''
