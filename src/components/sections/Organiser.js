@@ -11,9 +11,9 @@ import {
 } from '../../../public/assets/images';
 import { Animator } from '../layouts/components';
 
-const Organiser = ({ tab }) => {
+const Organiser = () => {
   return (
-    <section className={tab === 'organisers' ? 'block' : 'hidden'}>
+    <section>
       <div>
         <article>
           <div className="flex items-baseline gap-x-2 lg:gap-x-4">
