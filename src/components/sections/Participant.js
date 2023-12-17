@@ -11,9 +11,9 @@ import {
 } from '../../../public/assets/images';
 import { Animator } from '../layouts/components';
 
-const Participant = ({ tab }) => {
+const Participant = () => {
   return (
-    <div className={tab === 'participants' ? 'block' : 'hidden'}>
+    <div>
       <div>
         <article>
           <div className="flex items-baseline gap-x-2 lg:gap-x-4">

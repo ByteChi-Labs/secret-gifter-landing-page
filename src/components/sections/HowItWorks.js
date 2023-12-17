@@ -51,8 +51,8 @@ const HowItWorks = () => {
       </Animator>
 
       <article className="xl:w-5/6 mx-auto mt-8 px-4 lg:px-8 xl:px-0">
-        <Organiser tab={tab} />
-        <Participant tab={tab} />
+        {tab === 'organisers' && <Organiser />}
+        {tab === 'participants' && <Participant />}
       </article>
     </section>
   );
